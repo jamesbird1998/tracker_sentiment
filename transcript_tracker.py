@@ -11,7 +11,7 @@ from google.genai.types import GenerateContentConfig
 import time as tm
 
 # My Google Gemini API key
-API_KEY = "AIzaSyD_OKBIvvr_MFt231XsBm7iDBZe8m3r8LA"
+API_KEY = "API"
 
 # Initialize Google AI client
 client = genai.Client(api_key=API_KEY)
