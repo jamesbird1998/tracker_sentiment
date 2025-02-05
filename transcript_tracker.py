@@ -155,7 +155,7 @@ def format_as_dataframe(summary_data):
 
 # Main function to run 
 def main():
-    folder = "dassault_transcripts"
+    folder = "dassault"
     quarterly_transcripts = extract_text_from_folder(folder)
 
     if not quarterly_transcripts:
@@ -166,7 +166,7 @@ def main():
 
     summary_df = format_as_dataframe(summary)
     tools.display_dataframe_to_user(name="Quarterly Summary", dataframe=summary_df)
-    summary_df.to_csv("transcript_sentiment_table_v1.csv")
+    summary_df.to_csv("transcript_sentiment_table_{folder}.csv")
 
 # Run the main function
 if __name__ == "__main__":
